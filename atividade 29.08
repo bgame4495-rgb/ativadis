@@ -1,0 +1,14 @@
+import os
+os.system ("cls")
+
+login_salvo= "Bruno"
+senha_salva = "123"
+
+login = input("digite o login: ")
+senha = input("digite a senha: ")
+
+
+if  login == login_salvo and senha == senha_salva:
+    print("BEM VINDO")
+else:
+    print("login ou senha invalido")

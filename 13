@@ -1,0 +1,12 @@
+import streamlit as st
+
+st.title("Logica de Programação")
+
+st.header("Laço de Repetição - WHILE")
+numero = st.number_input("Digite um numero: ",step=1)
+
+while numero ==2:
+    numero = st.number_input("Digite um numero: ",step=1)
+ 
+
+st.header("fim")

@@ -1,0 +1,24 @@
+import streamlit as st 
+
+st.title("Logica de programação")
+
+st.header("Laço de repetição - for")
+
+QUANTIDADE_DE_NOTAS = 3
+soma = 0 
+
+for i in range(QUANTIDADE_DE_NOTAS):
+    nota = st.number_input(f"Digite a {i+1}ª nota: ")
+    soma = soma + nota
+
+media = soma / QUANTIDADE_DE_NOTAS
+if st.button("mostrar resultado"):
+    st.info(f"Media: {media:.1f}")
+    if media >= 7:
+        st.success("APROVADO")
+    elif  media >=4:
+        st.warning("RECUPERAÇÃO")
+    else:
+     st.error("REPROVADO")
+
+

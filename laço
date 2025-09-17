@@ -1,0 +1,14 @@
+import streamlit as st
+
+email = "Bruni"
+senha_salva = "1234"
+
+login = st.text_input("Digite o login")
+senha = st.text_input("colooque a senha", type="password")
+
+if st.button("ENTRAR"):
+
+    if email == login and senha_salva == senha:
+        st.success("CORRETO")
+    else:
+        st.error("incorreto")

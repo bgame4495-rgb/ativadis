@@ -1,0 +1,18 @@
+
+import os
+
+login_salvo = "gol"
+senha_salva = "12344"
+
+for i in range(3):
+    print(f"Tentativa {i + 1}")
+    login = input("Digite seu login: ")
+    senha = input("Digite sua senha: ")
+
+    if login == login_salvo and senha == senha_salva:
+        print("Bem-vindo!")
+        break
+    else:
+        print("Login ou senha inválidos.\n")
+else:
+    print("Número máximo de tentativas excedido. Tente novamente mais tarde.")

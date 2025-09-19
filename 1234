@@ -1,0 +1,22 @@
+import os 
+os.system("cls")
+
+QUANTIDADE = 0
+soma = 0
+
+while True:
+        nota = int(input("Digite uma nota: "))
+        #quantidade_notas = quantidades_ notas + 1
+        #soma = soma + nota
+        
+        QUANTIDADE += 1
+        soma += QUANTIDADE
+        resposta = input("deseja inserir mais uma nota? \nUse S ou N: ").lower()
+        if resposta == "n":
+            
+            media = soma / QUANTIDADE
+        if QUANTIDADE <= 0:
+                break
+
+
+        print(f"Media: {media} ")
